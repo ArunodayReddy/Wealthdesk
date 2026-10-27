@@ -1,0 +1,25 @@
+# WealthDesk local stack: web (nginx + SPA) + api (Express).
+#
+# Run: docker compose up --build
+# Then open http://localhost:8080 — the web container's nginx proxies
+# /api to the api container, so the browser stays same-origin.
+#
+# NOTE: compose was authored but NOT run in the dev VM (no Docker there).
+# The same topology was verified without Docker: api on :3333 +
+# Angular dev server on :4200 with proxy.conf.json (see the e2e spec).
+services:
+  api:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    ports:
+      - "3333:3333"
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - api

@@ -1,0 +1,10 @@
+{
+  "name": "data-access",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "data-access/src",
+  "prefix": "lib",
+  "projectType": "library",
+  "tags": ["scope:shared", "type:data-access"],
+  "// targets": "to see all targets run: nx show project data-access --web",
+  "targets": {}
+}

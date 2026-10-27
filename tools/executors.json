@@ -1,0 +1,1 @@
+{"executors":{"affected-report":{"description":"Writes a markdown report of the projects affected by current changes.","implementation":"./executors/affected-report/executor","schema":"./executors/affected-report/schema.json"}},"name":"@fidelity-portfolio-dashboard/tools"}

@@ -1,0 +1,43 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "bundler",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "strict": false,
+    "paths": {
+      "@fidelity-portfolio-dashboard/domain": ["./domain/src/index.ts"],
+      "@fidelity-portfolio-dashboard/util": ["./util/src/index.ts"],
+      "@fidelity-portfolio-dashboard/data-access": [
+        "./data-access/src/index.ts"
+      ],
+      "@fidelity-portfolio-dashboard/ui": ["./ui/src/index.ts"],
+      "@fidelity-portfolio-dashboard/feature-dashboard": [
+        "./feature-dashboard/src/index.ts"
+      ],
+      "@fidelity-portfolio-dashboard/feature-accounts": [
+        "./feature-accounts/src/index.ts"
+      ],
+      "@fidelity-portfolio-dashboard/feature-planning": [
+        "./feature-planning/src/index.ts"
+      ],
+      "@fidelity-portfolio-dashboard/feature-watchlist": [
+        "./feature-watchlist/src/index.ts"
+      ],
+      "@fidelity-portfolio-dashboard/feature-auth": [
+        "./feature-auth/src/index.ts"
+      ],
+      "@fidelity-portfolio-dashboard/tools": ["./tools/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

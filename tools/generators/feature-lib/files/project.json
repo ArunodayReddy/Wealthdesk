@@ -1,0 +1,1 @@
+{"$schema":"../node_modules/nx/schemas/project-schema.json","name":"feature-<%= fileName %>","prefix":"lib","projectType":"library","sourceRoot":"feature-<%= fileName %>/src","tags":["scope:web","type:feature"],"targets":{}}

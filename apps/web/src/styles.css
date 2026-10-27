@@ -1,0 +1,25 @@
+/* Global styles for WealthDesk. Component-scoped styles live in each
+ * component; this file holds only the page-level baseline: font stack,
+ * box-sizing reset, and body background. Everything else is per-component
+ * so styles stay co-located with the markup they style. */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  background: #f4f6f9;
+  color: #1a2332;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+a {
+  color: #0b5fff;
+}

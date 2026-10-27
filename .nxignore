@@ -1,0 +1,4 @@
+# Exclude generator template files from Nx project discovery.
+# The template project.json would otherwise register a phantom project
+# literally named "feature-<%= fileName %>".
+tools/generators/feature-lib/files

@@ -1,0 +1,17 @@
+/**
+ * proxy.conf.json — the dev-server API proxy.
+ *
+ * WHY: the Angular dev server runs on :4200 and the API on :3333. Without
+ * a proxy, browser calls to /api/v1 would be cross-origin (CORS needed).
+ * With it, /api/* is forwarded server-side to localhost:3333, so the
+ * browser sees one origin. The API deliberately has NO CORS middleware —
+ * same-origin is the design (see api/src/main.ts), and production does
+ * the same via nginx (see apps/web/nginx.conf).
+ */
+{
+  "/api": {
+    "target": "http://localhost:3333",
+    "secure": false,
+    "changeOrigin": true
+  }
+}
